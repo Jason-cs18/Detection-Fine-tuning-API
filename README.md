@@ -6,7 +6,7 @@ Because detection-models (Yolo, Mask-RCNN, etc) are often developed by the diffe
 * One-stage Models:
     1. [RetinaNet (ICCV'17)](https://arxiv.org/abs/1708.02002) inspired by [keras-retinanet](https://github.com/fizyr/keras-retinanet)
     2. [Yolov3 (arXiv'18)](https://arxiv.org/abs/1804.02767) inspired by [keras-yolo3](https://github.com/qqwweee/keras-yolo3) and [mobilenetv2-yolov3](https://github.com/fsx950223/mobilenetv2-yolov3)
-    3. [M2Det (AAAI'19, the latest SSD)](https://arxiv.org/abs/1811.04533)
+    3. [M2Det (AAAI'19, the latest SSD)](https://arxiv.org/abs/1811.04533) inspired by [M2Det](https://github.com/qijiezhao/M2Det) and [m2det-tensorflow](https://github.com/tadax/m2det)
 ## Usage
 ## Analysis of Detection-models
 ### [Mask RCNN (CVPR'17)](https://arxiv.org/abs/1703.06870)
