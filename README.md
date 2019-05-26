@@ -14,6 +14,6 @@ Structure:
 ![alt text](https://github.com/jacksonly/Detection-Fine-tuning-API/tree/master/Images/yolov3.png)
 
 We test different feature extractors in Yolov3:
-..1. Default feature extractor: [Darknet-53](https://github.com/qqwweee/keras-yolo3)
-..2. Other feature extractor: [mobilenetv2](https://github.com/fsx950223/mobilenetv2-yolov3)
+1. Default feature extractor: [Darknet-53](https://github.com/qqwweee/keras-yolo3)
+2. Other feature extractor: [mobilenetv2](https://github.com/fsx950223/mobilenetv2-yolov3)
 ### [M2Det (AAAI'19, the latest SSD)](https://arxiv.org/abs/1811.04533)
