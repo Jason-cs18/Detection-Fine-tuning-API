@@ -7,6 +7,8 @@ Because detection-models (Yolo, Mask-RCNN, etc) are often developed by the diffe
     1. [RetinaNet (ICCV'17)](https://arxiv.org/abs/1708.02002)
     2. [Yolov3 (arXiv'18)](https://arxiv.org/abs/1804.02767)
     3. [M2Det (AAAI'19, the latest SSD)](https://arxiv.org/abs/1811.04533)
+## Usage
+## Analysis of Detection-models
 ### [Mask RCNN (CVPR'17)](https://arxiv.org/abs/1703.06870)
 ### [RetinaNet (ICCV'17)](https://arxiv.org/abs/1708.02002)
 ### [Yolov3 (arXiv'18)](https://arxiv.org/abs/1804.02767)
