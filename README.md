@@ -12,7 +12,7 @@ Because detection-models (Yolo, Mask-RCNN, etc) are often developed by the diffe
 ### [Mask RCNN (CVPR'17)](https://arxiv.org/abs/1703.06870)
 ### [RetinaNet (ICCV'17)](https://arxiv.org/abs/1708.02002)
 ### [Yolov3 (arXiv'18)](https://arxiv.org/abs/1804.02767)
-Structure: 
+Structure:<br/>
 ![alt text](https://github.com/jacksonly/Detection-Fine-tuning-API/tree/master/Images/yolov3.png)
 
 We use two feature extractors in Yolov3:
