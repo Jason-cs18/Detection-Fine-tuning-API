@@ -18,14 +18,6 @@ Fine-grained features of roi). The common structure is Feature Pyramid Network (
 There are two main approaches in detection:
     1. Two-stage Detection: extracting all bbs that have objects first and then classifying each bb.
     2. One-stage Detection: extracting bbs and classifying bbs simultaneously.
-## Fine-tuning
-* Supervised Training (Given labeled data):
-    1. [Fine-tuning the whole model.](https://github.com/ultralytics/yolov3/wiki/Train-Custom-Data)
-    2. Fine-tuning the high-level feature-extractor and detection.
-* Unsupervised Training (Given unlabeled data or raw videos):
-    <br/>Standard Fine-tuning Scheme: [Fine-tuning with detections.](https://eccv2018.org/openaccess/content_ECCV_2018/papers/Yang_Zou_Unsupervised_Domain_Adaptation_ECCV_2018_paper.pdf)
-    1. Fine-tuning the whole model with pseudo-bounding-boxes.
-    2. Fine-tuning the high-level feature-extractor and detection with pseudo-bounding-boxes.  
 ## Supporting Models
 * Two-stage Detection:
     1. [Mask RCNN (CVPR'17)](https://arxiv.org/abs/1703.06870) inspired by [wkentaro](https://github.com/wkentaro/mask-rcnn.pytorch)
@@ -33,7 +25,6 @@ There are two main approaches in detection:
     1. [RetinaNet (ICCV'17)](https://arxiv.org/abs/1708.02002) inspired by [yhenon](https://github.com/yhenon/pytorch-retinanet)
     2. [Yolov3 (arXiv'18)](https://arxiv.org/abs/1804.02767) inspired by [ultralytics](https://github.com/ultralytics/yolov3) and [TommyAnqi](https://github.com/TommyAnqi/YOLOv3-Pytorch)
     3. [M2Det (AAAI'19, the latest SSD)](https://arxiv.org/abs/1811.04533) inspired by [qijiezhao](https://github.com/qijiezhao/M2Det)
-## Usage
 ## Details of Detection-models
 ### [Mask RCNN (CVPR'17)](https://arxiv.org/abs/1703.06870)
 #### Structure:
@@ -77,3 +68,13 @@ More details can be found in [A Closer Look at YOLOv3.](https://www.cyberailab.c
 <p align="center">
   <img width="900" height="200" src=https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/m2det_structure.png>
 </p>
+
+## Fine-tuning
+* Supervised Training (Given labeled data):
+    1. [Fine-tuning the whole model.](https://github.com/ultralytics/yolov3/wiki/Train-Custom-Data)
+    2. Fine-tuning the high-level feature-extractor and detection.
+* Unsupervised Training (Given unlabeled data or raw videos):
+    <br/>Standard Fine-tuning Scheme: [Fine-tuning with detections.](https://eccv2018.org/openaccess/content_ECCV_2018/papers/Yang_Zou_Unsupervised_Domain_Adaptation_ECCV_2018_paper.pdf)
+    1. Fine-tuning the whole model with pseudo-bounding-boxes.
+    2. Fine-tuning the high-level feature-extractor and detection with pseudo-bounding-boxes.  
+## Usage
