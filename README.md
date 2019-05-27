@@ -22,14 +22,15 @@ All detection models consist two components: feature extractor and detection. In
 ### [Mask RCNN (CVPR'17)](https://arxiv.org/abs/1703.06870)
 ### [RetinaNet (ICCV'17)](https://arxiv.org/abs/1708.02002)
 ### [Yolov3 (arXiv'18)](https://arxiv.org/abs/1804.02767)
-Process Flow:<br/>
+#### Process Flow:
 <p align="center">
   <img width="900" height="200" src=https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/yolov3_flow.png>
 </p>
-Structure: <br/>
+#### Structure: 
 <p align="center">
   <img width="900" height="600" src=https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/yolov3_structure.png>
 </p>
+
 We use two feature extractors in Yolov3:
 1. Default feature extractor: [Darknet-53 or Darknet-19](https://github.com/ultralytics/yolov3)
 2. Other feature extractor (more faster): [mobilenetv2](https://github.com/TommyAnqi/YOLOv3-Pytorch)
