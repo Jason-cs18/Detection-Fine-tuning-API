@@ -23,10 +23,10 @@ All detection models consist two components: feature extractor and detection. In
 ### [RetinaNet (ICCV'17)](https://arxiv.org/abs/1708.02002)
 ### [Yolov3 (arXiv'18)](https://arxiv.org/abs/1804.02767)
 Process Flow:<br/>
+<p align="center">
+  <img width="460" height="300" src="http://www.fillmurray.com/460/300">
+</p>
 Structure: <br/>
-![alt text](https://github.com/jacksonly/Multi-Cameras-System/blob/master/Experiment_0/images/cam_loc_wild.png)
-
-![alt text](https://github.com/jacksonly/Detection-Fine-tuning-API/tree/master/Images/yolov3_flow1.png)
 
 We use two feature extractors in Yolov3:
 1. Default feature extractor: [Darknet-53 or Darknet-19](https://github.com/ultralytics/yolov3)
