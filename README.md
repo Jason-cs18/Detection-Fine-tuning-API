@@ -32,8 +32,20 @@ There are two main approaches in detection:
 ## Usage
 ## Details of Detection-models
 ### [Mask RCNN (CVPR'17)](https://arxiv.org/abs/1703.06870)
+#### Structure:
+<p align="center">
+  <img width="900" height="200" src=https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/mask_rcnn_structure.png>
+</p>
+
+In Mask-RCNN, 
+1. They use CNN layers (low-level feature-extractor and high-level feature-extractor) to extract the features from images first. 
+2. They use RPN network to extract all bounding-boxe candidates. Each candidate has the corresponding coordinates (xmin, ymin, xmax, ymax) and the class (background or foreground). 
+<p align="center">
+  <img width="900" height="200" src=https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/RPN.png>
+</p>
+3. They use FC to classify each candidate which is foregound.
 ### [RetinaNet (ICCV'17)](https://arxiv.org/abs/1708.02002)
-### Structure:
+#### Structure:
 <p align="center">
   <img width="900" height="200" src=https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/retinanet_structure.png>
 </p>
