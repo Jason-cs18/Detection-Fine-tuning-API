@@ -4,7 +4,7 @@ Because detection-models (Yolo, Mask-RCNN, etc) are often developed by the diffe
 ## Intro to Detection-Models
 All detection models consist three components: low-level feature-extractor, high-level-extractor and detection. 
 <p align="center">
-  <img width="900" height="300" src=https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/Detect_Flow.png>
+  <img width="900" height="200" src=https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/Detect_Flow.png>
 </p>
 
 1. Low-level feature-extracor: it targets to extract the low-level features from images as same as classification and is often pretrained on ImageNet. In detection-models, we often use backbone-network to represent it.
