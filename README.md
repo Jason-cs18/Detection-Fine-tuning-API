@@ -34,7 +34,7 @@ There are two main approaches in detection:
 ### [Mask RCNN (CVPR'17)](https://arxiv.org/abs/1703.06870)
 #### Structure:
 <p align="center">
-  <img width="900" height="200" src=https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/mask_rcnn_structure.png>
+  <img width="300" height="300" src=https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/mask_rcnn_structure.png>
 </p>
 
 In Mask-RCNN, 
@@ -44,6 +44,7 @@ In Mask-RCNN,
   <img width="900" height="200" src=https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/RPN.png>
 </p>
 3. They use FC to classify each candidate which is foregound.
+
 ### [RetinaNet (ICCV'17)](https://arxiv.org/abs/1708.02002)
 #### Structure:
 <p align="center">
