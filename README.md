@@ -57,7 +57,7 @@ In Mask-RCNN,
   <img width="900" height="600" src=https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/yolov3_structure.png>
 </p>
 
-To analysis model-structure and data flow in detail, I plot the whole structure in the .pdf format ([pytorch_yolo](https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/pytorch_yolo.pdf)). In [pytorch_yolo](https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/pytorch_yolo.pdf), I mark scale-1 in blue, scale-2 in red and scale-3 in green.
+To analysis model-structure and data flow in detail, I plot the whole structure in the .pdf format ([pytorch_yolo](https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/yolov3/pytorch_yolo.pdf)). In [pytorch_yolo](https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/yolov3/pytorch_yolo.pdf), I mark scale-1 in blue, scale-2 in red and scale-3 in green.
 
 To get different performances of yolo, we use two feature extractors in Yolov3:
 1. Default feature extractor: [Darknet-53 or Darknet-19](https://github.com/ultralytics/yolov3)
