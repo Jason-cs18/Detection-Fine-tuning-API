@@ -34,6 +34,7 @@ There are two main methods in Detection:
 <p align="center">
   <img width="900" height="200" src=https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/retinanet_structure.png>
 </p>
+
 ### [Yolov3 (arXiv'18)](https://arxiv.org/abs/1804.02767)
 #### Process Flow:
 <p align="center">
