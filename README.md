@@ -6,6 +6,10 @@ Because detection-models (Yolo, Mask-RCNN, etc) are often developed by the diffe
     $ cd Detection-Fine-tuning-API/
     $ sudo pip3 install -r requirements.txt
     
+##### Download pretrained weights (Yolov3 pretrained from coco)
+    $ cd weights/
+    $ bash ./yolov3/weights/download_weights.sh
+    
 ## Intro to Detection-Models
 All detection models consist three components: low-level feature-extractor, high-level-extractor and detection. 
 <p align="center">
