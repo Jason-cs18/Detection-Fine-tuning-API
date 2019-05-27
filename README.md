@@ -54,3 +54,6 @@ To get different performances of yolo, we use two feature extractors in Yolov3:
 
 More details can be found in [A Closer Look at YOLOv3.](https://www.cyberailab.com/home/a-closer-look-at-yolov3)
 ### [M2Det (AAAI'19, the latest SSD)](https://arxiv.org/abs/1811.04533)
+<p align="center">
+  <img width="900" height="200" src=https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/m2det_structure.png>
+</p>
