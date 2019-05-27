@@ -88,6 +88,9 @@ More details can be found in [A Closer Look at YOLOv3.](https://www.cyberailab.c
     1. Fine-tuning the whole model with pseudo-bounding-boxes.
     2. Fine-tuning the high-level feature-extractor and detection with pseudo-bounding-boxes.  
 ## Usage
+#### Detection
+#### Fine-tuning
+#### Evaluation
 ## References:
 [1] [Li Liu et al. Deep Learning for Generic Object Detection: A Survey. Arxiv 2018.](https://arxiv.org/pdf/1809.02165v1.pdf)
 <br/>[2] [Kaiming He et al. Mask R-CNN. ICCV 2017.](http://openaccess.thecvf.com/content_ICCV_2017/papers/He_Mask_R-CNN_ICCV_2017_paper.pdf)
