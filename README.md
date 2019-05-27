@@ -89,7 +89,13 @@ More details can be found in [A Closer Look at YOLOv3.](https://www.cyberailab.c
     2. Fine-tuning the high-level feature-extractor and detection with pseudo-bounding-boxes.  
 ## Usage
 #### Detection
+We support to detect images and videos real-time.
 #### Fine-tuning
+We support 4 types of datasets:
+1. Images with bounding boxes (Supervised Training).
+2. Images without bounding boxes (Unsupervised Training).
+3. Videos with bounding boxes (Supervised Training).
+4. Videos without bounding boxes (Unsupervised Training).
 #### Evaluation
 ## References:
 [1] [Li Liu et al. Deep Learning for Generic Object Detection: A Survey. Arxiv 2018.](https://arxiv.org/pdf/1809.02165v1.pdf)
