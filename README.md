@@ -32,6 +32,7 @@ All detection models consist two components: feature extractor and detection. In
   <img width="900" height="600" src=https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/yolov3_structure.png>
 </p>
 
+To analysis model-structure and data flow in detail, I plot the whole structure in the .pdf format (./images/pytorch_yolo.pdf). In pytorch_yolo, I mark scale-1 in blue, scale-2 in red and scale-3 in green.
 We use two feature extractors in Yolov3:
 1. Default feature extractor: [Darknet-53 or Darknet-19](https://github.com/ultralytics/yolov3)
 2. Other feature extractor (more faster): [mobilenetv2](https://github.com/TommyAnqi/YOLOv3-Pytorch)
