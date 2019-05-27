@@ -22,7 +22,8 @@ All detection models consist two components: feature extractor and detection. In
 ### [Mask RCNN (CVPR'17)](https://arxiv.org/abs/1703.06870)
 ### [RetinaNet (ICCV'17)](https://arxiv.org/abs/1708.02002)
 ### [Yolov3 (arXiv'18)](https://arxiv.org/abs/1804.02767)
-![Process Flow](https://github.com/jacksonly/Detection-Fine-tuning-API/tree/master/Images/yolov3_flow.png | width=100)
+Process Flow:<br/>
+![](https://github.com/jacksonly/Detection-Fine-tuning-API/tree/master/Images/yolov3_flow.png)
 Structure: <br/>
 ![alt text](https://github.com/jacksonly/Detection-Fine-tuning-API/tree/master/Images/yolov3_structure.png)
 
