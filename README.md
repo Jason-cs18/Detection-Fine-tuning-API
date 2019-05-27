@@ -17,9 +17,9 @@ Fine-grained features of roi). The common structure is Feature Pyramid Network (
 <p align="center">
   <img width="400" height="200" src=https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/FPN.png>
 </p>
+
 3. Detection: it target to generate bounding boxes and their class-scores.<br/>
 There are two main methods in Detection: 
-
 * Two-stage Detection (extracting all bbs that have object and then classifying each bb):
     1. [Mask RCNN (CVPR'17)](https://arxiv.org/abs/1703.06870) inspired by [wkentaro](https://github.com/wkentaro/mask-rcnn.pytorch)
 * One-stage Detection (extracting bbs and classifying bbs simultaneously):
