@@ -81,8 +81,10 @@ More details can be found in [A Closer Look at YOLOv3.](https://www.cyberailab.c
 ## Usage
 ## References:
 [1] [Li Liu et al. Deep Learning for Generic Object Detection: A Survey. Arxiv 2018.](https://arxiv.org/pdf/1809.02165v1.pdf)
-[2] [Kaiming He et al. Mask R-CNN. ICCV 2017.](http://openaccess.thecvf.com/content_ICCV_2017/papers/He_Mask_R-CNN_ICCV_2017_paper.pdf)
-[3] [Tsung-Yi Lin et al. Focal Loss for Dense Object Detection. CVPR 2017](https://arxiv.org/pdf/1708.02002.pdf)
-[4] [Joseph Redmon et al. YOLOv3: An Incremental Improvement. Arxiv 2018.](https://pjreddie.com/media/files/papers/YOLOv3.pdf)
-[5] [Qijie Zhao et al. M2Det: A Single-Shot Object Detector based on Multi-Level Feature Pyramid
-Network. AAAI 2019](https://arxiv.org/pdf/1811.04533.pdf)
+<br/>[2] [Kaiming He et al. Mask R-CNN. ICCV 2017.](http://openaccess.thecvf.com/content_ICCV_2017/papers/He_Mask_R-CNN_ICCV_2017_paper.pdf)
+<br/>[3] [Tsung-Yi Lin et al. Focal Loss for Dense Object Detection. CVPR 2017](https://arxiv.org/pdf/1708.02002.pdf)
+<br/>[4] [Joseph Redmon et al. YOLOv3: An Incremental Improvement. Arxiv 2018.](https://pjreddie.com/media/files/papers/YOLOv3.pdf)
+<br/>[5] [Qijie Zhao et al. M2Det: A Single-Shot Object Detector based on Multi-Level Feature Pyramid Network. AAAI 2019.](https://arxiv.org/pdf/1811.04533.pdf)
+<br/>[6] [Yang Zou et al. Unsupervised Domain Adaptation for Semantic Segmentation via Class-Balanced Self-Training. ECCV 2018.](https://eccv2018.org/openaccess/content_ECCV_2018/papers/Yang_Zou_Unsupervised_Domain_Adaptation_ECCV_2018_paper.pdf)
+<br/>[7] [SouYoung Jin et al. Unsupervised Hard Example Mining from Videos for Improved Object Detection. ECCV 2018.](http://vis-www.cs.umass.edu/unsupVideo/docs/unsup-video_eccv2018.pdf)
+<br/>[8] [Paul Voigtlaender et al. Large-Scale Object Discovery and Detector Adaptation from Unlabeled Video. CVPR 2018.](https://arxiv.org/pdf/1712.08832.pdf)
