@@ -14,7 +14,7 @@ Fine-grained features of roi). The common structure is Feature Pyramid Network (
 There are two main approaches in detection:
     1. Two-stage Detection: extracting all bbs that have objects first and then classifying each bb.
     2. One-stage Detection: extracting bbs and classifying bbs simultaneously.
-## Supporting Fine-tuning
+## Fine-tuning
 * Supervised Training (Given labeled data):
     1. [Fine-tuning the whole model.](https://github.com/ultralytics/yolov3/wiki/Train-Custom-Data)
     2. Fine-tuning the high-level feature-extractor and detection.
@@ -30,7 +30,7 @@ There are two main approaches in detection:
     2. [Yolov3 (arXiv'18)](https://arxiv.org/abs/1804.02767) inspired by [ultralytics](https://github.com/ultralytics/yolov3) and [TommyAnqi](https://github.com/TommyAnqi/YOLOv3-Pytorch)
     3. [M2Det (AAAI'19, the latest SSD)](https://arxiv.org/abs/1811.04533) inspired by [qijiezhao](https://github.com/qijiezhao/M2Det)
 ## Usage
-## Analysis of Detection-models
+## Details of Detection-models
 ### [Mask RCNN (CVPR'17)](https://arxiv.org/abs/1703.06870)
 ### [RetinaNet (ICCV'17)](https://arxiv.org/abs/1708.02002)
 ### Structure:
