@@ -26,6 +26,7 @@ All detection models consist two components: feature extractor and detection. In
 <p align="center">
   <img width="900" height="200" src=https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/yolov3_flow.png>
 </p>
+
 #### Structure: 
 <p align="center">
   <img width="900" height="600" src=https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/yolov3_structure.png>
