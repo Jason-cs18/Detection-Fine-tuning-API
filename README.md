@@ -37,4 +37,6 @@ To analysis model-structure and data flow in detail, I plot the whole structure 
 To get different performances of yolo, we use two feature extractors in Yolov3:
 1. Default feature extractor: [Darknet-53 or Darknet-19](https://github.com/ultralytics/yolov3)
 2. Other feature extractor (more faster): [mobilenetv2](https://github.com/TommyAnqi/YOLOv3-Pytorch)
+
+More details can be found in [A Closer Look at YOLOv3](https://www.cyberailab.com/home/a-closer-look-at-yolov3)
 ### [M2Det (AAAI'19, the latest SSD)](https://arxiv.org/abs/1811.04533)
