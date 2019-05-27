@@ -75,7 +75,7 @@ More details can be found in [A Closer Look at YOLOv3.](https://www.cyberailab.c
     1. [Fine-tuning the whole model.](https://github.com/ultralytics/yolov3/wiki/Train-Custom-Data)
     2. Fine-tuning the high-level feature-extractor and detection.
 * Unsupervised Training (Given unlabeled data or raw videos):
-    <br/>Standard Fine-tuning Scheme: [Fine-tuning with detections.](https://eccv2018.org/openaccess/content_ECCV_2018/papers/Yang_Zou_Unsupervised_Domain_Adaptation_ECCV_2018_paper.pdf)
+    <br/>Standard Fine-tuning Scheme: [Fine-tuning with detections or Easy-to-Hard.](https://eccv2018.org/openaccess/content_ECCV_2018/papers/Yang_Zou_Unsupervised_Domain_Adaptation_ECCV_2018_paper.pdf)
     1. Fine-tuning the whole model with pseudo-bounding-boxes.
     2. Fine-tuning the high-level feature-extractor and detection with pseudo-bounding-boxes.  
 ## Usage
