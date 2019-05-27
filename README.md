@@ -28,7 +28,7 @@ Process Flow:<br/>
 </p>
 Structure: <br/>
 <p align="center">
-  <img width="900" height="200" src=https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/yolov3_structure.png>
+  <img width="900" height="600" src=https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/yolov3_structure.png>
 </p>
 We use two feature extractors in Yolov3:
 1. Default feature extractor: [Darknet-53 or Darknet-19](https://github.com/ultralytics/yolov3)
