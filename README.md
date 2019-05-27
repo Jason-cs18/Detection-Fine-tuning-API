@@ -65,6 +65,7 @@ To get different performances of yolo, we use two feature extractors in Yolov3:
 
 More details can be found in [A Closer Look at YOLOv3.](https://www.cyberailab.com/home/a-closer-look-at-yolov3)
 ### [M2Det (AAAI'19, the latest SSD)](https://arxiv.org/abs/1811.04533)
+#### Structure
 <p align="center">
   <img width="900" height="200" src=https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/m2det_structure.png>
 </p>
@@ -78,3 +79,10 @@ More details can be found in [A Closer Look at YOLOv3.](https://www.cyberailab.c
     1. Fine-tuning the whole model with pseudo-bounding-boxes.
     2. Fine-tuning the high-level feature-extractor and detection with pseudo-bounding-boxes.  
 ## Usage
+## References:
+[1] [Li Liu et al. Deep Learning for Generic Object Detection: A Survey. Arxiv 2018.](https://arxiv.org/pdf/1809.02165v1.pdf)
+[2] [Kaiming He et al. Mask R-CNN. ICCV 2017.](http://openaccess.thecvf.com/content_ICCV_2017/papers/He_Mask_R-CNN_ICCV_2017_paper.pdf)
+[3] [Tsung-Yi Lin et al. Focal Loss for Dense Object Detection. CVPR 2017](https://arxiv.org/pdf/1708.02002.pdf)
+[4] [Joseph Redmon et al. YOLOv3: An Incremental Improvement. Arxiv 2018.](https://pjreddie.com/media/files/papers/YOLOv3.pdf)
+[5] [Qijie Zhao et al. M2Det: A Single-Shot Object Detector based on Multi-Level Feature Pyramid
+Network. AAAI 2019](https://arxiv.org/pdf/1811.04533.pdf)
