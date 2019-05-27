@@ -24,9 +24,8 @@ All detection models consist two components: feature extractor and detection. In
 ### [Yolov3 (arXiv'18)](https://arxiv.org/abs/1804.02767)
 Process Flow:<br/>
 <p align="center">
-  <img width="460" height="300" src="https://github.com/jacksonly/Detection-Fine-tuning-API/tree/master/Images/yolov3_flow">
+  <img width="460" height="300" src="https://github.com/jacksonly/Detection-Fine-tuning-API/tree/master/Images/yolov3_flow.png">
 </p>
-![alt text](https://github.com/jacksonly/Detection-Fine-tuning-API/tree/master/Images/yolov3_flow.png){:height="50%" width="50%"}
 Structure: <br/>
 ![alt text](https://github.com/jacksonly/Detection-Fine-tuning-API/tree/master/Images/yolov3_structure.png)
 
