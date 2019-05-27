@@ -11,7 +11,7 @@ Because detection-models (Yolo, Mask-RCNN, etc) are often developed by the diffe
     2. Fine-tuning detection with pseudo-bounding-boxes. 
 ## Supporting Models
 All detection models consist three components: low-level feature-extractor, high-level-extractor and detection. 
-1. Low-level feature-extracor: it targets to extract the low-level features from images as same as classification and is often pretrained on ImageNet. In detection-models, we often use backend to represent it.
+1. Low-level feature-extracor: it targets to extract the low-level features from images as same as classification and is often pretrained on ImageNet. In detection-models, we often use backbone-network to represent it.
 2. High-level feature-extractor: it focuses on extracting features that are relevant to detection (i.e, 
 Fine-grained features of roi). The common structure is Feature Pyramid Network (FPN) and this architecture is more capable to capture the object's information, both low-level and high-level. 
 <p align="center">
