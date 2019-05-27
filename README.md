@@ -1,6 +1,14 @@
 # Detection-Fine-tuning-API
 Because detection-models (Yolo, Mask-RCNN, etc) are often developed by the different frameworks and evaluated the performance on different hardware, it's hard to evaluate the performance (i.e, fps) and fine-tune these on your customized datasets. This project builds all detection-models on keras-tensorflow and provides the general API for training, fine-tuning and detection. 
 ## Installation
+## Supporting Fine-tuning
+* Supervised Training (Given labeled data):
+    1. [Fine-tuning the whole model.](https://github.com/ultralytics/yolov3/wiki/Train-Custom-Data)
+    2. Fine-tuning the classification and regression.
+* Unsupervised Training (Given unlabeled data or raw videos):
+... Standard Fine-tuning Scheme: [Fine-tuning with detections.](https://eccv2018.org/openaccess/content_ECCV_2018/papers/Yang_Zou_Unsupervised_Domain_Adaptation_ECCV_2018_paper.pdf)
+    1. Fine-tuning the whole model with pseudo-bounding-boxes.
+    2. Fine-tuning classification and regression with pseudo-bounding-boxes. 
 ## Supporting Models
 * Two-stage Models (Region proposals + classification):
     1. [Mask RCNN (CVPR'17)](https://arxiv.org/abs/1703.06870) inspired by [Mask_RCNN](https://github.com/matterport/Mask_RCNN)
