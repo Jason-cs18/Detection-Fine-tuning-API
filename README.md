@@ -23,9 +23,11 @@ All detection models consist two components: feature extractor and detection. In
 ### [RetinaNet (ICCV'17)](https://arxiv.org/abs/1708.02002)
 ### [Yolov3 (arXiv'18)](https://arxiv.org/abs/1804.02767)
 Process Flow:<br/>
+![Screenshot](yolov3_flow1.png)
 <p align="center">
-  <img width="460" height="300" src="http://www.fillmurray.com/460/300">
+  <img width="460" height="300" src=yolov3_flow1.png>
 </p>
+
 Structure: <br/>
 
 We use two feature extractors in Yolov3:
