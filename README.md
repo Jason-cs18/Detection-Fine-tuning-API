@@ -17,11 +17,11 @@ There are two main approaches in detection:
 ## Supporting Fine-tuning
 * Supervised Training (Given labeled data):
     1. [Fine-tuning the whole model.](https://github.com/ultralytics/yolov3/wiki/Train-Custom-Data)
-    2. Fine-tuning the detection.
+    2. Fine-tuning the high-level feature-extractor and detection.
 * Unsupervised Training (Given unlabeled data or raw videos):
     <br/>Standard Fine-tuning Scheme: [Fine-tuning with detections.](https://eccv2018.org/openaccess/content_ECCV_2018/papers/Yang_Zou_Unsupervised_Domain_Adaptation_ECCV_2018_paper.pdf)
     1. Fine-tuning the whole model with pseudo-bounding-boxes.
-    2. Fine-tuning detection with pseudo-bounding-boxes. 
+    2. Fine-tuning the high-level feature-extractor and detection with pseudo-bounding-boxes.  
 ## Supporting Models
 * Two-stage Detection:
     1. [Mask RCNN (CVPR'17)](https://arxiv.org/abs/1703.06870) inspired by [wkentaro](https://github.com/wkentaro/mask-rcnn.pytorch)
