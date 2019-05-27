@@ -3,6 +3,10 @@ Because detection-models (Yolo, Mask-RCNN, etc) are often developed by the diffe
 ## Installation
 ## Intro to Detection-Models
 All detection models consist three components: low-level feature-extractor, high-level-extractor and detection. 
+<p align="center">
+  <img width="900" height="300" src=https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/Detect_Flow.png>
+</p>
+
 1. Low-level feature-extracor: it targets to extract the low-level features from images as same as classification and is often pretrained on ImageNet. In detection-models, we often use backbone-network to represent it.
 2. High-level feature-extractor: it focuses on extracting features that are relevant to detection (i.e, 
 Fine-grained features of roi). The common structure is Feature Pyramid Network (FPN) and this architecture is more capable to capture the object's information, both low-level and high-level. 
@@ -34,7 +38,7 @@ There are two main approaches in detection:
 ### [Mask RCNN (CVPR'17)](https://arxiv.org/abs/1703.06870)
 #### Structure:
 <p align="center">
-  <img width="900" height="300" src=https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/mask_rcnn_structure.png>
+  <img width="700" height="300" src=https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/mask_rcnn_structure.png>
 </p>
 
 In Mask-RCNN, 
