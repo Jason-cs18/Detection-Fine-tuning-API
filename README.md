@@ -1,6 +1,11 @@
 # Detection-Fine-tuning-API
 Because detection-models (Yolo, Mask-RCNN, etc) are often developed by the different frameworks and evaluated the performance on different hardware, it's hard to evaluate the performance (i.e, fps) and fine-tune these on your customized datasets. This project builds all detection-models with pytorch and provides the general API for training, fine-tuning and detection. 
 ## Installation
+##### Clone and install requirements
+    $ git clone https://github.com/jacksonly/Detection-Fine-tuning-API.git
+    $ cd Detection-Fine-tuning-API/
+    $ sudo pip3 install -r requirements.txt
+    
 ## Intro to Detection-Models
 All detection models consist three components: low-level feature-extractor, high-level-extractor and detection. 
 <p align="center">
