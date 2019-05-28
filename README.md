@@ -4,11 +4,11 @@ Because detection-models (Yolo, Mask-RCNN, etc) are often developed by the diffe
 1. [Installation](#Installation)
 2. [Intro to Detection-Models](#Intro-to-Detection-Models)
 3. [Supporting Models](#Supporting-Models)
-4. [Details of Detection-models](##Details of Detection-models)
-5. [Loss visualization and analysis](##Loss visualization and analysis)
-6. [Fine-tuning](##Fine-tuning)
-7. [Usage](##Usage)
-8. [References](##References)
+4. [Details of Detection-models](#Details-about-Detection-models)
+5. [Loss visualization and analysis](#Loss-visualization-and-analysis)
+6. [Fine-tuning](#Fine-tuning)
+7. [Usage](#Usage)
+8. [References](#References)
 
 ## Installation
 ##### Clone and install requirements
@@ -44,7 +44,7 @@ There are two main approaches in detection:
     1. [RetinaNet (ICCV'17)](https://arxiv.org/abs/1708.02002) inspired by [yhenon](https://github.com/yhenon/pytorch-retinanet)
     2. [Yolov3 (arXiv'18)](https://arxiv.org/abs/1804.02767) inspired by [ultralytics](https://github.com/ultralytics/yolov3) and [TommyAnqi](https://github.com/TommyAnqi/YOLOv3-Pytorch)
     3. [M2Det (AAAI'19, the latest SSD)](https://arxiv.org/abs/1811.04533) inspired by [qijiezhao](https://github.com/qijiezhao/M2Det)
-## Details of Detection-models
+## Details about Detection-models
 ### [Mask RCNN (CVPR'17)](https://arxiv.org/abs/1703.06870)
 #### Structure:
 <p align="center">
