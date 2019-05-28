@@ -81,7 +81,7 @@ More details can be found in [A Closer Look at YOLOv3.](https://www.cyberailab.c
 
 ## Fine-tuning
 ### OHEM
-To get more efficient backpropagation in bounding boxes, we adopt the online hard example mininig (OHEM) in each mini-batch. In other words, we will sort all bounding boxes (positives and negatives) by loss in each mini-batch and select B% bounding boxes that have the highest loss. Backprogation is performed based on the selected bounding boxes. Details can be refered in [paper](https://arxiv.org/pdf/1604.03540.pdf)
+To get more efficient backpropagation on bounding boxes, we adopt the online hard example mininig (OHEM) in mini-batch. In other words, we will sort all bounding boxes (positives and negatives) by loss in mini-batch and select B% bounding boxes that have the highest loss. Backprogation is performed based on the selected bounding boxes. Details can be refered in [paper](https://arxiv.org/pdf/1604.03540.pdf) and this method is often used to training detection-models.
 
 * Supervised Training (Given labeled data):
     1. [Fine-tuning the whole model.](https://github.com/ultralytics/yolov3/wiki/Train-Custom-Data)
