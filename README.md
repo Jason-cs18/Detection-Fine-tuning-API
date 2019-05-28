@@ -42,7 +42,7 @@ There are two main approaches in detection:
     1. [Mask RCNN (CVPR'17)](https://arxiv.org/abs/1703.06870) inspired by [wkentaro](https://github.com/wkentaro/mask-rcnn.pytorch)
 * One-stage Detection:
     1. [RetinaNet (ICCV'17)](https://arxiv.org/abs/1708.02002) inspired by [yhenon](https://github.com/yhenon/pytorch-retinanet)
-    2. [Yolov3 (arXiv'18)](https://arxiv.org/abs/1804.02767) inspired by [ultralytics](https://github.com/ultralytics/yolov3) and [TommyAnqi](https://github.com/TommyAnqi/YOLOv3-Pytorch)
+    2. [Yolov3 (arXiv'18)](https://arxiv.org/abs/1804.02767) inspired by [ultralytics](https://github.com/ultralytics/yolov3) and [TencentYoutuResearch](https://github.com/TencentYoutuResearch/ObjectDetection-OneStageDet/tree/master/yolo)
     3. [M2Det (AAAI'19, the latest SSD)](https://arxiv.org/abs/1811.04533) inspired by [qijiezhao](https://github.com/qijiezhao/M2Det)
 ## Details about Detection-models
 ### [Mask RCNN (CVPR'17)](https://arxiv.org/abs/1703.06870)
