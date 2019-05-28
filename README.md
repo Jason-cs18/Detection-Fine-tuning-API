@@ -90,6 +90,10 @@ More details can be found in [A Closer Look at YOLOv3.](https://www.cyberailab.c
 </p>
 
 ## Loss visualization and analysis
+To analysis the relationship between loss and bounding boxes, we plot the bbs that have small loss with green rectange and bbs that have large loss with purple rectange in pedestrian detection (dataset from WildTrack). We find that the hard bounding boxes are often having occlusion and hard to detect by models. 
+<p align="center">
+  <img width="900" height="300" src=https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/loss_visualization.png>
+</p>
 
 ## Fine-tuning
 ### OHEM
