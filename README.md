@@ -94,6 +94,7 @@ To analysis the relationship between loss and bounding boxes, we plot the bbs th
 <p align="center">
   <img width="900" height="500" src=https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/loss_visualization.png>
 </p>
+Intuitively, we can use hard bbs as training set to get efficient training. But I found the performance is too bad when the number of hard bbs is small. Because detection-models need pair (image, bbs) as training set, only using subset of the all bbs may be easy to overfitting. ...
 
 ## Fine-tuning
 ### OHEM
