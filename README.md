@@ -97,8 +97,16 @@ To analysis the relationship between loss and bounding boxes, we plot the bbs th
 Intuitively, we can use hard bbs as training set to get efficient training. But I found the performance is too bad when the number of hard bbs is small. Because detection-models need pair (image, bbs) as training set, only using subset of the all bbs may be easy to overfitting. ...
 
 ## Fine-tuning
-### OHEM
-To get more efficient backpropagation on bounding boxes, we adopt the online hard example mininig (OHEM) in mini-batch. In other words, we will sort all bounding boxes (positives and negatives) by loss in mini-batch and select B% bounding boxes that have the highest loss. Backprogation is performed based on the selected bounding boxes. Details can be refered in [paper](https://arxiv.org/pdf/1604.03540.pdf) and this method is often used to training detection-models.
+### Problem
+1. Class imbalance:
+...In fine-tuning, we must decide to use how many detections for backprogation because detection-models usually generate too many bounding boxes (many nosie) and the RoIs are overlapping with the small number of detections. If we use all detections as training sets. We will get too many negatives and very less positives. Thus we need to use some strategy to resolve the imbalance between negative and positive samples. There are three main methods: Online hard example mining (OHEM), Focal Loss and Using positives only.
+
+#### OHEM (Mask RCNN)
+To get more efficient backpropagation on bounding boxes, we adopt the online hard example mininig (OHEM)  to training . In other words, we will sort all bounding boxes (positives and negatives) by loss in mini-batch and select B% bounding boxes that have the highest loss. Backprogation is performed based on the selected bounding boxes. Details can be refered in [paper](https://arxiv.org/pdf/1604.03540.pdf) and this method is often used to training two-stage detection-models.
+#### Focal Loss (RetinaNet and Mask RCNN)
+...
+#### Using positives only (Yolov3 and M2Det)
+In Yolov3, it only chooses the most suitable positive bounding boxes for backpagation. When they get the ground-truth bb1, they will search the image and find the detection bb2 that is the most possible candidate for bb1. Finally, they compute the loss between bb1 and bb2. This means each ground-truth only has one detection as candidate. Thus, there are not existing too many negatives.
 
 * Supervised Training (Given labeled data):
     1. [Fine-tuning the whole model.](https://github.com/ultralytics/yolov3/wiki/Train-Custom-Data)
