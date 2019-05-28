@@ -99,7 +99,10 @@ Intuitively, we can use hard bbs as training set to get efficient training. But 
 ## Fine-tuning
 ### Problem
 1. Class imbalance:</br>
-... In fine-tuning, we must decide to use how many detections for backprogation because detection-models usually generate too many bounding boxes (many nosie) and the RoIs are overlapping with the small number of detections. If we use all detections as training sets. We will get too many negatives and very less positives. Thus we need to use some strategy to resolve the imbalance between negative and positive samples. There are three main methods: Online hard example mining (OHEM), Focal Loss and Using positives only.
+    In fine-tuning, we must decide to use how many detections for backprogation because detection-models usually generate too many bounding boxes (many nosie) and the RoIs are overlapping with the small number of detections. If we use all detections as training sets., too many simple negatives will influence the performance of fine-tuning. Therefore, we need to design some strategies to resolve the imbalance problem between negative and positive samples. There are three main methods: Online hard example mining (OHEM), Focal Loss and Using positives only.
+<p align="center">
+  <img width="500" height="300" src=https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/imbalance.png>
+</p>
 
 #### OHEM (Mask RCNN)
 To get more efficient backpropagation on bounding boxes, we adopt the online hard example mininig (OHEM)  to training . In other words, we will sort all bounding boxes (positives and negatives) by loss in mini-batch and select B% bounding boxes that have the highest loss. Backprogation is performed based on the selected bounding boxes. Details can be refered in [paper](https://arxiv.org/pdf/1604.03540.pdf) and this method is often used to training two-stage detection-models.
