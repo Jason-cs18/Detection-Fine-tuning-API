@@ -2,7 +2,7 @@
 Because detection-models (Yolo, Mask-RCNN, etc) are often developed by the different frameworks and evaluated the performance on different hardware, it's hard to evaluate the performance (i.e, fps) and fine-tune these on your customized datasets. This project builds all detection-models with pytorch and provides the general API for training, fine-tuning and detection. 
 #### Contents:
 1. [Installation](##Installation)
-2. [Intro to Detection-Models](##Intro to Detection-Models)
+2. [Intro to Detection-Models](#Intro to Detection-Models)
 3. [Supporting Models](##Supporting Models)
 4. [Details of Detection-models](##Details of Detection-models)
 5. [Loss visualization and analysis](##Loss visualization and analysis)
