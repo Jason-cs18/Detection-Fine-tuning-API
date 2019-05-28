@@ -80,6 +80,9 @@ More details can be found in [A Closer Look at YOLOv3.](https://www.cyberailab.c
 </p>
 
 ## Fine-tuning
+### OHEM
+To get more efficient backpropagation in bounding boxes, we adopt the online hard example mininig (OHEM) in each mini-batch. In other words, we will sort all bounding boxes (positives and negatives) by loss in each mini-batch and select B% bounding boxes that have the highest loss. Backprogation is performed based on the selected bounding boxes. Details can be refered in [paper](https://arxiv.org/pdf/1604.03540.pdf)
+
 * Supervised Training (Given labeled data):
     1. [Fine-tuning the whole model.](https://github.com/ultralytics/yolov3/wiki/Train-Custom-Data)
     2. Fine-tuning the high-level feature-extractor and detection.
@@ -105,6 +108,7 @@ We support 4 types of datasets:
 <br/>[3] [Tsung-Yi Lin et al. Focal Loss for Dense Object Detection. CVPR 2017](https://arxiv.org/pdf/1708.02002.pdf)
 <br/>[4] [Joseph Redmon et al. YOLOv3: An Incremental Improvement. Arxiv 2018.](https://pjreddie.com/media/files/papers/YOLOv3.pdf)
 <br/>[5] [Qijie Zhao et al. M2Det: A Single-Shot Object Detector based on Multi-Level Feature Pyramid Network. AAAI 2019.](https://arxiv.org/pdf/1811.04533.pdf)
-<br/>[6] [Yang Zou et al. Unsupervised Domain Adaptation for Semantic Segmentation via Class-Balanced Self-Training. ECCV 2018.](https://eccv2018.org/openaccess/content_ECCV_2018/papers/Yang_Zou_Unsupervised_Domain_Adaptation_ECCV_2018_paper.pdf)
-<br/>[7] [SouYoung Jin et al. Unsupervised Hard Example Mining from Videos for Improved Object Detection. ECCV 2018.](http://vis-www.cs.umass.edu/unsupVideo/docs/unsup-video_eccv2018.pdf)
-<br/>[8] [Paul Voigtlaender et al. Large-Scale Object Discovery and Detector Adaptation from Unlabeled Video. CVPR 2018.](https://arxiv.org/pdf/1712.08832.pdf)
+<br/>[6] [Abhinav Shrivastava et al. Training Region-based Object Detectors with Online Hard Example Mining. CVPR 2016.](https://arxiv.org/pdf/1604.03540.pdf)
+<br/>[7] [Yang Zou et al. Unsupervised Domain Adaptation for Semantic Segmentation via Class-Balanced Self-Training. ECCV 2018.](https://eccv2018.org/openaccess/content_ECCV_2018/papers/Yang_Zou_Unsupervised_Domain_Adaptation_ECCV_2018_paper.pdf)
+<br/>[8] [SouYoung Jin et al. Unsupervised Hard Example Mining from Videos for Improved Object Detection. ECCV 2018.](http://vis-www.cs.umass.edu/unsupVideo/docs/unsup-video_eccv2018.pdf)
+<br/>[9] [Paul Voigtlaender et al. Large-Scale Object Discovery and Detector Adaptation from Unlabeled Video. CVPR 2018.](https://arxiv.org/pdf/1712.08832.pdf)
