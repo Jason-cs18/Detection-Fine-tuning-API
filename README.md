@@ -208,15 +208,27 @@ python train.py --data ./data/custom/custom.data --cfg ./cfg/custom.cfg --resume
     cd ..
     python detect_video.py --cfg ./cfg/yolov3.cfg --weights ./weights/yolov3.pt --images ./video/images/ --output ./video/output/ --img-size 800 --conf-thres 0.2
     ```
-    3. use detections (from the 2nd step) those confidence-scores are large than threshold as the pseudo labels.
+    3. analysis the detections.
     ``` bash
-    filtering
+    # analysis the detections and extract the RoI-class in the video (top-3)
+    python plot_bb (./video/video_analysis.png)
     ```
-    4. train the current model on the pseudo labels.
+<p align="center">
+  <img width="500" height="500" src=https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/plot_bb.png>
+</p>
+    
+    4. use detections (from the 2nd step) those confidence-scores are large than threshold as the pseudo labels.
+    ``` bash
+    cd video
+    # plot the new bounding boxes' confidence in CDF
+    # generate pseudo-labels (top_percentage)
+    # we will use top_percentage% bbs as pseudo labels
+    ```
+    5. train the current model on the pseudo labels.
     ``` bash
     fine-tuning.
     ```
-    5. Demo
+    6. Demo
     
 #### 4. Performance (Yolov3)
 In experiment, I train yolov3 on pedestrain detection (from [WildTrack](https://cvlab.epfl.ch/data/data-wildtrack/)). The preprocessed data can be download in [images](https://drive.google.com/open?id=1ZIiZjeZpwNG0UZGjWGbTT-8IMnJv7pJJ) and [labels](https://drive.google.com/open?id=1qyY2g90P7vrCUJ-MyaSsG2yUzJ3ZAe4T). You can extract these and put to ./yolov3/
