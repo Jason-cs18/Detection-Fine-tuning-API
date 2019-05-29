@@ -8,7 +8,7 @@ Because detection-models (Yolo, Mask-RCNN, etc) are often developed by the diffe
 5. [Loss visualization and analysis](#Loss-visualization-and-analysis)
 6. [Fine-tuning](#Fine-tuning)
 7. [Usage](#Usage)
-⋅⋅* Unordered sub-list. 
+    1. Unordered sub-list. 
 8. [References](#References)
 
 ## Installation
