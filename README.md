@@ -200,7 +200,7 @@ python train.py --data ./data/custom/custom.data --cfg ./cfg/custom.cfg --resume
     # crate a folder to save the pseudo-labels.
     mkdir labels
     # extract all frames at 10 fps.
-    ffmpeg -i video.mp4 -vf "fps=10" images/%08d.jpeg
+    ffmpeg -i video.mp4 -vf "fps=10" images/%08d.png
     ```
     2. use yolov3 (pretrained on coco) to detect these frames.
     ``` bash
@@ -212,7 +212,7 @@ python train.py --data ./data/custom/custom.data --cfg ./cfg/custom.cfg --resume
     ``` bash
     # analysis the detections and extract the RoI-class in the video (top-3)
     python plot_bb (./video/video_analysis.png)
-    # update ./yolov3/data/custom/custom.names and ./yolov3/data/custom/custom.data as discussed in Data Prepartion (Yolov3)
+    # update ./yolov3/video/custom_video.names and ./yolov3/video/custom_video.data as discussed in Data Prepartion (Yolov3)
     ```
     <p align="center">
       <img width="600" height="500" src=https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/plot_bb.png>
@@ -221,15 +221,18 @@ python train.py --data ./data/custom/custom.data --cfg ./cfg/custom.cfg --resume
     4. use detections (from the 2nd step) those confidence-scores are large than threshold as the pseudo labels.
     ``` bash
     cd video
-    # plot the new bounding boxes' confidence in CDF
-    # generate pseudo-labels (top_percentage)
-    # we will use top_percentage% bbs as pseudo labels
+    # generate pseudo-labels
+    python generate_bb.py # default: train/val = 9/1.
+    # update ./yolov3/cfg/custom_video.cfg as discussed in Data preparation.
     ```
     5. train the current model on the pseudo labels.
     ``` bash
-    fine-tuning.
+    cd ..
+    # fine-tuning
+    python train.py --data ./video/custom_video.data --cfg ./cfg/custom_video.cfg --resume --class_num=1 --transfer_id=2 --img-size=800
     ```
     6. Demo
+    
     
 #### 4. Performance (Yolov3)
 In experiment, I train yolov3 on pedestrain detection (from [WildTrack](https://cvlab.epfl.ch/data/data-wildtrack/)). The preprocessed data can be download in [images](https://drive.google.com/open?id=1ZIiZjeZpwNG0UZGjWGbTT-8IMnJv7pJJ) and [labels](https://drive.google.com/open?id=1qyY2g90P7vrCUJ-MyaSsG2yUzJ3ZAe4T). You can extract these and put to ./yolov3/

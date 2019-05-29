@@ -1,0 +1,6 @@
+classes=3
+train=./video/train.txt
+valid=./video/val.txt
+names=./video/custom_video.names
+backup=backup/
+eval=coco
