@@ -138,11 +138,11 @@ An example image and label pair would be:
 ./yolov3/data/custom/images/00000000.png # image
 ./yolov3/data/custom/labels/00000000.txt # label
 ```
-    1. One file per image (if no objects in image, no label file is required).
-    2. One row per object.
-    3. Each row is class x_center y_center width height format.
-    4. Box coordinates must be in normalized xywh format (from 0 - 1).
-    5. Classes are zero-indexed (start from 0).
+1. One file per image (if no objects in image, no label file is required).
+2. One row per object.
+3. Each row is class x_center y_center width height format.
+4. Box coordinates must be in normalized xywh format (from 0 - 1).
+5. Classes are zero-indexed (start from 0).
 An example label file with 32 persons (all class 0):
 2. Update the train.txt and val.txt in `./yolov3/data/custom/`
 ```
