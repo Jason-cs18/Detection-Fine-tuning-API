@@ -156,6 +156,7 @@ An example label file with 32 persons (all class 0):
 ```
 sada
 ```
+
 3. Update the custom.names file in `./yolov3/data/custom/`
 <p align="center">
   <img width="500" height="200" src=https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/labeled_name.png>
@@ -174,14 +175,17 @@ We support 2 types of datasets:
 1. Images with bounding boxes (Supervised Training).
 ``` bash
 cd ./yolov3
+###
+### useful trick: use a large img-size or a small learning rate would improve performance in fine-tuning.
+###
 # Train new model from scratch
-python train.py --data ./data/custom/custom.data --cfg ./cfg/custom.cfg
+python train.py --data ./data/custom/custom.data --cfg ./cfg/custom.cfg --img-size=800
 # Fine-tune model from coco (Detection)
-python train.py --data ./data/custom/custom.data --cfg ./cfg/custom.cfg --resume --class_num=1
+python train.py --data ./data/custom/custom.data --cfg ./cfg/custom.cfg --resume --class_num=1 --img-size=800
 # Fine-tune model from coco (High+Detection)
-python train.py --data ./data/custom/custom.data --cfg ./cfg/custom.cfg --resume --class_num=1 --transfer_id=1
+python train.py --data ./data/custom/custom.data --cfg ./cfg/custom.cfg --resume --class_num=1 --transfer_id=1 --img-size=800
 # Fine-tune model from coco (Low+High+Detection)
-python train.py --data ./data/custom/custom.data --cfg ./cfg/custom.cfg --resume --class_num=1 --transfer_id=2
+python train.py --data ./data/custom/custom.data --cfg ./cfg/custom.cfg --resume --class_num=1 --transfer_id=2 --img-size=800
 ```
 2. Images without bounding boxes (In progress). 
 #### 4. Performance (Yolov3)
