@@ -212,10 +212,11 @@ python train.py --data ./data/custom/custom.data --cfg ./cfg/custom.cfg --resume
     ``` bash
     # analysis the detections and extract the RoI-class in the video (top-3)
     python plot_bb (./video/video_analysis.png)
+    # update ./yolov3/data/custom/custom.names and ./yolov3/data/custom/custom.data as discussed in Data Prepartion (Yolov3)
     ```
-<p align="center">
-  <img width="500" height="500" src=https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/plot_bb.png>
-</p>
+    <p align="center">
+      <img width="400" height="400" src=https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/plot_bb.png>
+    </p>
     
     4. use detections (from the 2nd step) those confidence-scores are large than threshold as the pseudo labels.
     ``` bash
