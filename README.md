@@ -1,7 +1,7 @@
 # Detection-Fine-tuning-API
 Because detection-models (Yolo, Mask-RCNN, etc) are often developed by the different frameworks and evaluated the performance on different hardware, it's hard to evaluate the performance (i.e, fps) and fine-tune these on your customized datasets. This project builds all detection-models with pytorch and provides the general API for training, fine-tuning and detection in supervised and unsupervised settings. 
 <p align="center">
-  <img width="900" height="200" src=https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/fine_tune.png>
+  <img width="900" height="200" src=https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/fine_tune1.png>
 </p>
 
 #### Contents:
