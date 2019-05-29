@@ -203,17 +203,17 @@ python train.py --data ./data/custom/custom.data --cfg ./cfg/custom.cfg --resume
     ffmpeg -i video.mp4 -vf "fps=10" images/%08d.jpeg
     ```
     2. use yolov3 (pretrained on coco) to detect these frames.
-    ```
+    ``` bash
     # useful tricks: when the yolov3 detect many positives with low-threshold, we can use the low threshold and a larger img-size.
     cd ..
     python detect_video.py --cfg ./cfg/yolov3.cfg --weights ./weights/yolov3.pt --images ./video/images/ --output ./video/output/ --img-size 800 --conf-thres 0.2
     ```
     3. use detections (from the 2nd step) those confidence-scores are large than threshold as the pseudo labels.
-    ```
+    ``` bash
     filtering
     ```
     4. train the current model on the pseudo labels.
-    ```
+    ``` bash
     fine-tuning.
     ```
     5. Demo
