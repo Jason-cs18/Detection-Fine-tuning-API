@@ -120,10 +120,12 @@ In Yolov3, it only chooses the most suitable positive bounding boxes for backpag
 * Supervised Training (Given labeled data):
     1. [Fine-tuning the whole model.](https://github.com/ultralytics/yolov3/wiki/Train-Custom-Data)
     2. Fine-tuning the high-level feature-extractor and detection.
+    3. Fine-tuning the detection.
 * Unsupervised Training (Given unlabeled data or raw videos):
     <br/>Standard Fine-tuning Scheme: [Fine-tuning with detections or Easy-to-Hard.](https://eccv2018.org/openaccess/content_ECCV_2018/papers/Yang_Zou_Unsupervised_Domain_Adaptation_ECCV_2018_paper.pdf)
     1. Fine-tuning the whole model with pseudo-bounding-boxes.
-    2. Fine-tuning the high-level feature-extractor and detection with pseudo-bounding-boxes.  
+    2. Fine-tuning the high-level feature-extractor and detection with pseudo-bounding-boxes.
+    3. Fine-tuning the detection with pseudo-bounding-boxes.
 
 ## Usage
 ### Yolov3:
@@ -204,6 +206,8 @@ python train.py --data ./data/custom/custom.data --cfg ./cfg/custom.cfg --resume
     ```
     fine-tuning.
     ```
+    5. Demo
+    
 #### 4. Performance (Yolov3)
 In experiment, I train yolov3 on pedestrain detection (from [WildTrack](https://cvlab.epfl.ch/data/data-wildtrack/)). The preprocessed data can be download in [images](https://drive.google.com/open?id=1ZIiZjeZpwNG0UZGjWGbTT-8IMnJv7pJJ) and [labels](https://drive.google.com/open?id=1qyY2g90P7vrCUJ-MyaSsG2yUzJ3ZAe4T). You can extract these and put to ./yolov3/
 `from utils import utils; utils.plot_results()`<br/>
