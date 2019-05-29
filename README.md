@@ -125,7 +125,7 @@ In Yolov3, it only chooses the most suitable positive bounding boxes for backpag
 I plot the performance of training yolov3 on pedestrian detection and find that the loss on class is getting convergence fast because single-class classification is more simple than multi-classification (in coco).
 
 | Fine-tuning        | Performance  | Loss  |
-| ----------------------- |:-------------:| -------------:|
+| ----------------------- |:-------------:|:-------------:|
 | Train new model from scratch | ![](https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/1_performance.png)  |  ![](https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/1_loss.png) |
 | Fine-tune model from coco (Detection) | centered      |   $12 |
 | Fine-tune model from coco (High+Detection)| are neat      |    $1 |
