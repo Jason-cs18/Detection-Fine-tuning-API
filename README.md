@@ -187,7 +187,23 @@ python train.py --data ./data/custom/custom.data --cfg ./cfg/custom.cfg --resume
 # Fine-tune model from coco (Low+High+Detection)
 python train.py --data ./data/custom/custom.data --cfg ./cfg/custom.cfg --resume --class_num=1 --transfer_id=2 --img-size=800
 ```
-2. Images without bounding boxes (In progress). 
+2. Video without bounding boxes (Learning without supervision).
+    1. extract the all frames in video at 30 fps.
+    ```
+    extracting
+    ```
+    2. use yolov3 (pretrained on coco) to detect these frames.
+    ```
+    detection
+    ```
+    3. use detections (from the 2nd step) those confidence-scores are large than threshold as the pseudo labels.
+    ```
+    filtering
+    ```
+    4. train the current model on the pseudo labels.
+    ```
+    fine-tuning.
+    ```
 #### 4. Performance (Yolov3)
 In experiment, I train yolov3 on pedestrain detection (from [WildTrack](https://cvlab.epfl.ch/data/data-wildtrack/)). The preprocessed data can be download in [images](https://drive.google.com/open?id=1ZIiZjeZpwNG0UZGjWGbTT-8IMnJv7pJJ) and [labels](https://drive.google.com/open?id=1qyY2g90P7vrCUJ-MyaSsG2yUzJ3ZAe4T). You can extract these and put to ./yolov3/
 `from utils import utils; utils.plot_results()`<br/>
