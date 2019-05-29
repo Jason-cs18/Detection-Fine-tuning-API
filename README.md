@@ -124,16 +124,6 @@ In Yolov3, it only chooses the most suitable positive bounding boxes for backpag
     <br/>Standard Fine-tuning Scheme: [Fine-tuning with detections or Easy-to-Hard.](https://eccv2018.org/openaccess/content_ECCV_2018/papers/Yang_Zou_Unsupervised_Domain_Adaptation_ECCV_2018_paper.pdf)
     1. Fine-tuning the whole model with pseudo-bounding-boxes.
     2. Fine-tuning the high-level feature-extractor and detection with pseudo-bounding-boxes.  
-    
-### Performance (Yolov3)
-I plot the performance of training yolov3 on pedestrian detection and find that the loss on class is getting convergence fast because single-class classification is more simple than multi-classification (in coco).
-
-| Fine-tuning        | Performance  | Loss  |
-| ----------------------- |:-------------:|:-------------:|
-| Train new model from scratch | ![](https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/1_performance.png)  |  ![](https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/1_loss.png) |
-| Fine-tune model from coco (Detection) | centered      |   $12 |
-| Fine-tune model from coco (High+Detection)| are neat      |    $1 |
-| Fine-tune model from coco (Low+High+Detection)| are neat      |    $1 |
 
 ## Usage
 ### Yolov3:
@@ -147,6 +137,15 @@ We support 2 types of datasets:
 1. Images with bounding boxes (Supervised Training).
 2. Images without bounding boxes (Unsupervised Training).
 #### Evaluation
+#### Performance (Yolov3)
+I plot the performance of training yolov3 on pedestrian detection and find that the loss on class is getting convergence fast because single-class classification is more simple than multi-classification (in coco).
+
+| Fine-tuning        | Performance  | Loss  |
+| ----------------------- |:-------------:|:-------------:|
+| Train new model from scratch | ![](https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/1_performance.png)  |  ![](https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/1_loss.png) |
+| Fine-tune model from coco (Detection) | centered      |   $12 |
+| Fine-tune model from coco (High+Detection)| are neat      |    $1 |
+| Fine-tune model from coco (Low+High+Detection)| are neat      |    $1 |
 ## References:
 [1] [Li Liu et al. Deep Learning for Generic Object Detection: A Survey. Arxiv 2018.](https://arxiv.org/pdf/1809.02165v1.pdf)
 <br/>[2] [Kaiming He et al. Mask R-CNN. ICCV 2017.](http://openaccess.thecvf.com/content_ICCV_2017/papers/He_Mask_R-CNN_ICCV_2017_paper.pdf)
