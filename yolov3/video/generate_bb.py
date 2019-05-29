@@ -17,13 +17,13 @@ def transform(bbs, img_width, img_height):
 		bb_height = (ymax-ymin)/img_height
 		if bb[-1] == sorted_x[-1][0]:
 			# index = 0, top-1
-			out.append([0, x_center, y_center, width, height])
+			out.append([0, x_center, y_center, bb_width, bb_height])
 		elif bb[-1] == sorted_x[-2][0]:
 			# index = 1, top-2
-			out.append([1, x_center, y_center, width, height])
+			out.append([1, x_center, y_center, bb_width, bb_height])
 		else:
 			# index = 2, top-3
-			out.append([2, x_center, y_center, width, height])
+			out.append([2, x_center, y_center, bb_width, bb_height])
 	return out
 
 current_directory = os.getcwd()
