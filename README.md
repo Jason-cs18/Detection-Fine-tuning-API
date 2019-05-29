@@ -196,7 +196,6 @@ I plot the performance and loss. I find that the loss on class is getting conver
 | Fine-tune model from coco (Low+High+Detection)| are neat      |    $1 |
 When fine-tuning your customized dataset, you can modify the hyper-parameters in `./yolov3/train.py`. I use the default hyper-parameters setting:
 ``` bash
-cd ./yolov3
 # Hyperparameters: train.py --evolve --epochs 2 --img-size 320, Metrics: 0.204      0.302      0.175      0.234 (square smart)
 hyp = {'xy': 0.2,  # xy loss gain
        'wh': 0.1,  # wh loss gain
