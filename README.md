@@ -127,20 +127,20 @@ In Yolov3, it only chooses the most suitable positive bounding boxes for backpag
 
 ## Usage
 ### Yolov3:
-#### Data Prepartion
-#### Detection
+#### 1. Data Prepartion
+#### 2. Detection
 We support to detect image and video:
 1. Image: 
 2. Video: 
-#### Fine-tuning
+#### 3. Fine-tuning
 We support 2 types of datasets:
 1. Images with bounding boxes (Supervised Training).
 2. Images without bounding boxes (Unsupervised Training).
-#### Evaluation
-#### Performance (Yolov3)
+#### 4. Performance (Yolov3)
+`from utils import utils; utils.plot_results()`
 I plot the performance of training yolov3 on pedestrian detection and find that the loss on class is getting convergence fast because single-class classification is more simple than multi-classification (in coco).
 
-| Fine-tuning        | Performance  | Loss  |
+| Fine-tuning        | Performance  |    Loss     |
 | ----------------------- |:-------------:|:-------------:|
 | Train new model from scratch | ![](https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/1_performance.png)  |  ![](https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/1_loss.png) |
 | Fine-tune model from coco (Detection) | centered      |   $12 |
