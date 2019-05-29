@@ -132,7 +132,25 @@ We support to detect image and video:
 1. Image: 
 2. Video: 
 #### 2. Data Prepartion (Yolov3)
-1.  
+1. Put all images to `./yolov3/data/custom/images/` and all labeled files to `./yolov3/data/custom/labels/`. Each image's name must be same as the corresponding labeled files.
+An example image and label pair would be:
+```
+./yolov3/data/custom/images/00000000.png # image
+./yolov3/data/custom/labels/00000000.txt # label
+```
+    1. One file per image (if no objects in image, no label file is required).
+    2. One row per object.
+    3. Each row is class x_center y_center width height format.
+    4. Box coordinates must be in normalized xywh format (from 0 - 1).
+    5. Classes are zero-indexed (start from 0).
+An example label file with 32 persons (all class 0):
+2. Update the train.txt and val.txt in `./yolov3/data/custom/`
+```
+sada
+```
+3. Update the custom.names file in `./yolov3/data/custom/`
+4. Update the custom.data file in `./yolov3/data/custom/`
+5. Update the custom.cfg file in `./yolov3/cfg/`
 #### 3. Fine-tuning (Yolov3)
 We support 2 types of datasets:
 1. Images with bounding boxes (Supervised Training).
