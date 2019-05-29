@@ -8,6 +8,7 @@ Because detection-models (Yolo, Mask-RCNN, etc) are often developed by the diffe
 5. [Loss visualization and analysis](#Loss-visualization-and-analysis)
 6. [Fine-tuning](#Fine-tuning)
 7. [Usage](#Usage)
+⋅⋅* Unordered sub-list. 
 8. [References](#References)
 
 ## Installation
@@ -132,16 +133,16 @@ I plot the performance of training yolov3 on pedestrian detection and find that 
 | Fine-tune model from coco (Low+High+Detection)| are neat      |    $1 |
 
 ## Usage
+### Yolov3:
+#### Data Prepartion
 #### Detection
 We support to detect image and video:
 1. Image: 
-2. Video:
+2. Video: 
 #### Fine-tuning
-We support 4 types of datasets:
+We support 2 types of datasets:
 1. Images with bounding boxes (Supervised Training).
 2. Images without bounding boxes (Unsupervised Training).
-3. Videos with bounding boxes (Supervised Training).
-4. Videos without bounding boxes (Unsupervised Training).
 #### Evaluation
 ## References:
 [1] [Li Liu et al. Deep Learning for Generic Object Detection: A Survey. Arxiv 2018.](https://arxiv.org/pdf/1809.02165v1.pdf)
