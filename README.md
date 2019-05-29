@@ -164,6 +164,7 @@ sada
 <p align="center">
   <img width="800" height="200" src=https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/change_structure.png>
 </p>
+
 #### 3. Fine-tuning (Yolov3)
 We support 2 types of datasets:
 1. Images with bounding boxes (Supervised Training).
