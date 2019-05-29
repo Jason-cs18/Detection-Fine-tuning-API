@@ -132,6 +132,7 @@ We support to detect image and video:
 1. Image: 
 2. Video: 
 #### 2. Data Prepartion (Yolov3)
+1.  
 #### 3. Fine-tuning (Yolov3)
 We support 2 types of datasets:
 1. Images with bounding boxes (Supervised Training).
@@ -140,21 +141,22 @@ cd ./yolov3
 # Train new model from scratch
 python train.py --data ./data/custom/custom.data --cfg ./cfg/custom.cfg
 # Fine-tune model from coco (Detection)
-python train.py --data data/custom/custom.data --cfg cfg/custom.cfg --resume --class_num=1
+python train.py --data ./data/custom/custom.data --cfg ./cfg/custom.cfg --resume --class_num=1
 # Fine-tune model from coco (High+Detection)
-python train.py --data data/custom/custom.data --cfg cfg/custom.cfg --resume --class_num=1 --transfer_id=1
+python train.py --data ./data/custom/custom.data --cfg ./cfg/custom.cfg --resume --class_num=1 --transfer_id=1
 # Fine-tune model from coco (Low+High+Detection)
-python train.py --data data/custom/custom.data --cfg cfg/custom.cfg --resume --class_num=1 --transfer_id=2
+python train.py --data ./data/custom/custom.data --cfg ./cfg/custom.cfg --resume --class_num=1 --transfer_id=2
 ```
 2. Images without bounding boxes (In progress). 
 #### 4. Performance (Yolov3)
+In experiment, I train yolov3 on pedestrain detection (from [WildTrack](https://cvlab.epfl.ch/data/data-wildtrack/)). The preprocessed data can be download in [images]() and [labels](). You can extract these and put to ./yolov3/
 `from utils import utils; utils.plot_results()`<br/>
-I plot the performance of training yolov3 on pedestrian detection and find that the loss on class is getting convergence fast because single-class classification is more simple than multi-classification (in coco).
+I plot the performance and loss. I find that the loss on class is getting convergence fast because single-class classification is more simple than multi-classification (in coco).
 
 | Fine-tuning        | Performance  |    Loss     |
 | ----------------------- |:-------------:|:-------------:|
 | Train new model from scratch | ![](https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/1_performance.png)  |  ![](https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/1_loss.png) |
-| Fine-tune model from coco (Detection) | centered      |   $12 |
+| Fine-tune model from coco (Detection) | ![](https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/2_performance.png)    |   ![](https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/2_loss.png) |
 | Fine-tune model from coco (High+Detection)| are neat      |    $1 |
 | Fine-tune model from coco (Low+High+Detection)| are neat      |    $1 |
 ## References:
