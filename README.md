@@ -8,7 +8,10 @@ Because detection-models (Yolo, Mask-RCNN, etc) are often developed by the diffe
 5. [Loss visualization and analysis](#Loss-visualization-and-analysis)
 6. [Fine-tuning](#Fine-tuning)
 7. [Usage](#Usage)
-    1. Unordered sub-list. 
+    1. Mask-RCNN (in progress)
+    2. RetinaNet (in progress)
+    3. [Yolov3](#Yolov3)
+    4. M2Det (in progress)
 8. [References](#References)
 
 ## Installation
