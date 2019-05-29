@@ -4,9 +4,11 @@ torchvision
 matplotlib
 tensorflow
 tensorboard
+pycocotools
 terminaltables
 pillow
 tqdm
+glob
 opencv-python
 scikit-image
 pyyaml

@@ -19,6 +19,8 @@ Because detection-models (Yolo, Mask-RCNN, etc) are often developed by the diffe
 ##### Download pretrained weights (Yolov3 pretrained from coco)
     $ cd weights/
     $ bash ./yolov3/weights/download_weights.sh
+Pretrained pytorch models (.pt): 
+1. [yolov3.pt, yolov3-tiny.pt, yolov3-spp.pt](https://drive.google.com/drive/folders/1uxgUBemJVw9wZsdpboYbzUN4bcRhsuAI)
     
 ## Intro to Detection-Models
 All detection models consist three components: low-level feature-extractor, high-level-extractor and detection. 
