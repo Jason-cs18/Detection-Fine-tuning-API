@@ -146,7 +146,7 @@ An example image and label pair would be:
 
 An example label file with 32 persons (all class 0):
 <p align="center">
-  <img width="100" height="100" src=https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/labeled_data.png>
+  <img width="500" height="300" src=https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/labeled_data.png>
 </p>
 2. Update the train.txt and val.txt in `./yolov3/data/custom/`
 ```
@@ -154,15 +154,15 @@ sada
 ```
 3. Update the custom.names file in `./yolov3/data/custom/`
 <p align="center">
-  <img width="50" height="50" src=https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/labeled_name.png>
+  <img width="500" height="250" src=https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/labeled_name.png>
 </p>
 4. Update the custom.data file in `./yolov3/data/custom/`
 <p align="center">
-  <img width="200" height="50" src=https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/custom_data.png>
+  <img width="500" height="50" src=https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/custom_data.png>
 </p>
 5. Update the custom.cfg file in `./yolov3/cfg/`. Each YOLO layer has 255 outputs: 85 outputs per anchor [4 box coordinates + 1 object confidence + 80 class confidences], times 3 anchors. If you use fewer classes, you can reduce this to [4 + 1 + n] * 3 = 15 + 3*n outputs, where n is your class count. This modification should be made to the output filter preceding each of the 3 YOLO layers. Also modify classes=80 to classes=n in each YOLO layer, where n is your class count. 
 <p align="center">
-  <img width="200" height="50" src=https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/change_structure.png>
+  <img width="800" height="200" src=https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/change_structure.png>
 </p>
 #### 3. Fine-tuning (Yolov3)
 We support 2 types of datasets:
