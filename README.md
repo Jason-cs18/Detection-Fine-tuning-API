@@ -120,6 +120,14 @@ In Yolov3, it only chooses the most suitable positive bounding boxes for backpag
     <br/>Standard Fine-tuning Scheme: [Fine-tuning with detections or Easy-to-Hard.](https://eccv2018.org/openaccess/content_ECCV_2018/papers/Yang_Zou_Unsupervised_Domain_Adaptation_ECCV_2018_paper.pdf)
     1. Fine-tuning the whole model with pseudo-bounding-boxes.
     2. Fine-tuning the high-level feature-extractor and detection with pseudo-bounding-boxes.  
+    
+### Performance (Yolov3)
+| Fine-tuning        | Performance           | Loss  |
+| ------------- |:-------------:| -----:|
+| Train new model from scratch | ![](https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/1_performance.png)  |  ![](https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/1_loss.png) |
+| Fine-tune model from coco (Detection) | centered      |   $12 |
+| Fine-tune model from coco (Detection+High)| are neat      |    $1 |
+
 ## Usage
 #### Detection
 We support to detect image and video:
