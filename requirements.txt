@@ -13,3 +13,4 @@ copy
 opencv-python
 scikit-image
 pyyaml
+ffmpeg-python
