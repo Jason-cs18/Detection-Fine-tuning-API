@@ -151,6 +151,7 @@ An example label file with 32 persons (all class 0):
 <p align="center">
   <img width="500" height="300" src=https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/labeled_data.png>
 </p>
+
 2. Update the train.txt and val.txt in `./yolov3/data/custom/`
 ```
 sada
