@@ -129,8 +129,11 @@ In Yolov3, it only chooses the most suitable positive bounding boxes for backpag
 ### Yolov3:
 #### 1. Detection (Yolov3)
 We support to detect image and video:
-1. Image: 
-2. Video: 
+1. Images: 
+``` bash
+python3 detect.py --weights ./weights/yolov3.pt --images ./data/samples
+```
+2. Video: (in progress)
 #### 2. Data Prepartion (Yolov3)
 1. Put all images to `./yolov3/data/custom/images/` and all labeled files to `./yolov3/data/custom/labels/`. Each image's name must be same as the corresponding labeled files.
 An example image and label pair would be:
