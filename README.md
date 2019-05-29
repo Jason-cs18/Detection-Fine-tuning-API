@@ -190,9 +190,17 @@ python train.py --data ./data/custom/custom.data --cfg ./cfg/custom.cfg --resume
 python train.py --data ./data/custom/custom.data --cfg ./cfg/custom.cfg --resume --class_num=1 --transfer_id=2 --img-size=800
 ```
 2. Video without bounding boxes (Learning without supervision).
-    1. extract the all frames in video at 30 fps.
-    ```
-    extracting
+    1. extract the all frames at 5 fps.
+    ``` bash
+    cd ./yolov3/video
+    ## move your video in this folder and named video.mp4.
+    ## In my experiment, I use a video from WildTrack. You can download this video from https://drive.google.com/file/d/1sGUnExmJM2_tFuBd9LNlexf0LN2m0_c-/view (7.4G, 1920*1080, 35 minutes). 
+    # create a folder to save the frames
+    mkdir images
+    # crate a folder to save the pseudo-labels.
+    mkdir labels
+    # extract all frames at 5 fps.
+    ffmpeg -i video.mp4 -vf "fps=5" images/%08d.jpeg
     ```
     2. use yolov3 (pretrained on coco) to detect these frames.
     ```
