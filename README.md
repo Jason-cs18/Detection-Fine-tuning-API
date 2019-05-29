@@ -133,7 +133,7 @@ In Yolov3, it only chooses the most suitable positive bounding boxes for backpag
 We support to detect image and video:
 * Images: 
 ``` bash
-python3 detect.py --weights ./weights/yolov3.pt --images ./data/samples
+python3 detect.py --cfg ./cfg/yolov3.cfg --weights ./weights/yolov3.pt --images ./data/samples
 ```
 * Video: (in progress)
 #### 2. Data Prepartion (Yolov3)
