@@ -122,8 +122,8 @@ In Yolov3, it only chooses the most suitable positive bounding boxes for backpag
     2. Fine-tuning the high-level feature-extractor and detection with pseudo-bounding-boxes.  
     
 ### Performance (Yolov3)
-| Fine-tuning        | Performance           | Loss  |
-| ------------- |:-------------:| -----:|
+| Fine-tuning        | Performance  | Loss  |
+| ------------- |:-------------:| -------------:|
 | Train new model from scratch | ![](https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/1_performance.png)  |  ![](https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/1_loss.png) |
 | Fine-tune model from coco (Detection) | centered      |   $12 |
 | Fine-tune model from coco (Detection+High)| are neat      |    $1 |
