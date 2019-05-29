@@ -204,7 +204,7 @@ python train.py --data ./data/custom/custom.data --cfg ./cfg/custom.cfg --resume
     ```
     2. use yolov3 (pretrained on coco) to detect these frames.
     ```
-    detection
+    ### useful tricks: when the yolov3 detect many positives with low-threshold, we can use the low threshold and a larger img-size.
     ```
     3. use detections (from the 2nd step) those confidence-scores are large than threshold as the pseudo labels.
     ```
