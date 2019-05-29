@@ -194,6 +194,20 @@ I plot the performance and loss. I find that the loss on class is getting conver
 | Fine-tune model from coco (Detection) | ![](https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/2_performance.png)    |   ![](https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/2_loss.png) |
 | Fine-tune model from coco (High+Detection)| ![](https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/3_performance.png)    |    ![](https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/3_loss.png) |
 | Fine-tune model from coco (Low+High+Detection)| are neat      |    $1 |
+When fine-tuning your customized dataset, you can modify the hyper-parameters in `./yolov3/train.py`. I use the default hyper-parameters setting:
+``` bash
+cd ./yolov3
+# Hyperparameters: train.py --evolve --epochs 2 --img-size 320, Metrics: 0.204      0.302      0.175      0.234 (square smart)
+hyp = {'xy': 0.2,  # xy loss gain
+       'wh': 0.1,  # wh loss gain
+       'cls': 0.04,  # cls loss gain
+       'conf': 4.5,  # conf loss gain
+       'iou_t': 0.5,  # iou target-anchor training threshold
+       'lr0': 0.001,  # initial learning rate
+       'lrf': -4.,  # final learning rate = lr0 * (10 ** lrf)
+       'momentum': 0.90,  # SGD momentum
+       'weight_decay': 0.0005}  # optimizer weight decay
+```
 ## References:
 [1] [Li Liu et al. Deep Learning for Generic Object Detection: A Survey. Arxiv 2018.](https://arxiv.org/pdf/1809.02165v1.pdf)
 <br/>[2] [Kaiming He et al. Mask R-CNN. ICCV 2017.](http://openaccess.thecvf.com/content_ICCV_2017/papers/He_Mask_R-CNN_ICCV_2017_paper.pdf)
