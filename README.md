@@ -19,6 +19,8 @@ Because detection-models (Yolo, Mask-RCNN, etc) are often developed by the diffe
 8. [References](#References)
 
 #### Demo (Unsupervised fine-tuning on video, yolov3):
+[![Watch the video](https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/demo_two.png)](https://www.dropbox.com/s/pc2b7h27fhpk8m4/output.avi?dl=0)
+
 
 ## Installation
 ##### Clone and install requirements
