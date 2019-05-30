@@ -218,7 +218,7 @@ python train.py --data ./data/custom/custom.data --cfg ./cfg/custom.cfg --resume
     # 
     ```
     <p align="center">
-      <img width="500" height="300" src=https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/negatives_mining.png>
+      <img width="600" height="500" src=https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/negatives_mining.png>
     </p>
     
     3. analysis the detections.
