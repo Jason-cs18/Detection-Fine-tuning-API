@@ -18,6 +18,8 @@ Because detection-models (Yolo, Mask-RCNN, etc) are often developed by the diffe
     4. M2Det (in progress)
 8. [References](#References)
 
+#### Demo (Unsupervised fine-tuning on video)
+
 ## Installation
 ##### Clone and install requirements
     $ git clone https://github.com/jacksonly/Detection-Fine-tuning-API.git

@@ -206,9 +206,10 @@ def train(
                                   multi_scale=multi_scale)
 
     # Initialize distributed training
+#     if False:
     if torch.cuda.device_count() > 1:
         dist.init_process_group(backend=opt.backend, init_method=opt.dist_url, world_size=opt.world_size, rank=opt.rank)
-        model = torch.nn.parallel.DistributedDataParallel(model)
+        model = torch.nn.parallel.DistributedDataParallel(model, find_unused_parameters=True)
         # sampler = torch.utils.data.distributed.DistributedSampler(dataset)
 
     # Dataloader
@@ -305,7 +306,7 @@ def train(
             if multi_scale and (i + 1) % 10 == 0:
                 dataset.img_size = random.choice(range(10, 20)) * 32
                 print('multi_scale img_size = %g' % dataset.img_size)
-
+            
         # Calculate mAP (always test final epoch, skip first 5 if opt.nosave)
         if not (opt.notest or (opt.nosave and epoch < 10)) or epoch == epochs - 1:
             with torch.no_grad():
