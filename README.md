@@ -232,6 +232,9 @@ python train.py --data ./data/custom/custom.data --cfg ./cfg/custom.cfg --resume
     ```
     5. train the current model on the pseudo labels.
     ``` bash
+    # remove the old .shape file (if you have old val.shapes file in ./yolov3/data)
+    cd ../data
+    rm val.shapes
     cd ..
     # fine-tuning
     python train.py --data ./video/custom_video.data --cfg ./cfg/custom_video.cfg --resume --class_num=1 --transfer_id=2 --img-size=800
