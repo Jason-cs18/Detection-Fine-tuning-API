@@ -18,7 +18,7 @@ Because detection-models (Yolo, Mask-RCNN, etc) are often developed by the diffe
     4. M2Det (in progress)
 8. [References](#References)
 
-#### Demo (Unsupervised fine-tuning on video)
+#### Demo (Unsupervised fine-tuning on video, yolov3):
 
 ## Installation
 ##### Clone and install requirements
