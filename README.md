@@ -214,7 +214,13 @@ python train.py --data ./data/custom/custom.data --cfg ./cfg/custom.cfg --resume
     # useful tricks: when the yolov3 detect many positives with low-threshold, we can use the low threshold and a larger img-size.
     cd ..
     python detect_video.py --cfg ./cfg/yolov3.cfg --weights ./weights/yolov3.pt --images ./video/images/ --output ./video/output/ --img-size 800 --conf-thres 0.2
+    # (optional) If you extract the video at a high fps (>30), you can use template matching technique to filter some hard negatives (bbs that only were detected in frame-i but weren't detected in frame-[i-1] and frame-[i+1]). Deteails can be refered to Unsupervised Hard Example Mining from Videos for Improved Object Detection (ECCV'18).
+    # 
     ```
+    <p align="center">
+      <img width="500" height="300" src=https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/negatives_mining.png>
+    </p>
+    
     3. analysis the detections.
     ``` bash
     # analysis the detections and extract the RoI-class in the video (top-3)
