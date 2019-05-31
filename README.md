@@ -4,6 +4,12 @@ Because detection-models (Yolo, Mask-RCNN, etc) are often developed by the diffe
   <img width="900" height="300" src=https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/fine_tune1.png>
 </p>
 
+#### Environments:
+1. Pytorch-1.0
+2. python-3.6
+3. CUDA-9.0
+4. 2 TiTAN XP with 12 GPU Memory
+
 #### Contents:
 1. [Installation](#Installation)
 2. [Intro to Detection-Models](#Intro-to-Detection-Models)
