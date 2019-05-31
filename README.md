@@ -223,8 +223,8 @@ python train.py --data ./data/custom/custom.data --cfg ./cfg/custom.cfg --resume
     # useful tricks: when the yolov3 detect many positives with low-threshold, we can use the low threshold and a larger img-size.
     cd ..
     python detect_video.py --cfg ./cfg/yolov3.cfg --weights ./weights/yolov3.pt --images ./video/images/ --output ./video/output/ --img-size 800 --conf-thres 0.2
-    # (optional) If you extract the video at a high fps (>30), you can use template matching technique to filter some hard negatives (bbs that only were detected in frame-i but weren't detected in frame-[i-1] and frame-[i+1]). Deteails can be refered to Unsupervised Hard Example Mining from Videos for Improved Object Detection (ECCV'18).
-    # 
+    # (optional, use tracking to filter hard negatives) If you extract the video at a high fps (>30), you can use template matching technique to filter some hard negatives (bbs that only were detected in frame-i but weren't detected in frame-[i-1] and frame-[i+1]). Deteails can be refered to Unsupervised Hard Example Mining from Videos for Improved Object Detection (ECCV'18).
+    # (optional, use tracking to augument the hard positives) refer to Automatic adaptation of object detectors to new domains using self-training (CVPR 2019). 
     ```
     <p align="center">
       <img width="600" height="500" src=https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/negatives_mining.png>
@@ -295,3 +295,4 @@ hyp = {'xy': 0.2,  # xy loss gain
 <br/>[7] [Yang Zou et al. Unsupervised Domain Adaptation for Semantic Segmentation via Class-Balanced Self-Training. ECCV 2018.](https://eccv2018.org/openaccess/content_ECCV_2018/papers/Yang_Zou_Unsupervised_Domain_Adaptation_ECCV_2018_paper.pdf)
 <br/>[8] [SouYoung Jin et al. Unsupervised Hard Example Mining from Videos for Improved Object Detection. ECCV 2018.](http://vis-www.cs.umass.edu/unsupVideo/docs/unsup-video_eccv2018.pdf)
 <br/>[9] [Paul Voigtlaender et al. Large-Scale Object Discovery and Detector Adaptation from Unlabeled Video. CVPR 2018.](https://arxiv.org/pdf/1712.08832.pdf)
+<br/>[10] [Aruni RoyChowdhury et al. Automatic adaptation of object detectors to new domains using self-training. CVPR 2019.](https://arxiv.org/pdf/1904.07305.pdf)
