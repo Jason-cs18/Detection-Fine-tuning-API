@@ -204,6 +204,7 @@ python train.py --data ./data/custom/custom.data --cfg ./cfg/custom.cfg --resume
 python train.py --data ./data/custom/custom.data --cfg ./cfg/custom.cfg --resume --class_num=1 --transfer_id=2 --img-size=800
 ```
 2. Video without bounding boxes (Learning without supervision).
+    0. To evaluate the upper-bound of self-training, I compare the performance between detections with 0.5 confidence-threshold and 0.2 confidence-threshold.
     1. extract the all frames at 10 fps.
     ``` bash
     cd ./yolov3/video
