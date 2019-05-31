@@ -204,7 +204,7 @@ python train.py --data ./data/custom/custom.data --cfg ./cfg/custom.cfg --resume
 python train.py --data ./data/custom/custom.data --cfg ./cfg/custom.cfg --resume --class_num=1 --transfer_id=2 --img-size=800
 ```
 2. Video without bounding boxes (Learning without supervision).
-    * To evaluate the upper-bound of self-training, I compare the performance between detections with 0.5 confidence-threshold and 0.2 confidence-threshold. Then I will use detections (threshold=0.2) to teach self.
+    * To evaluate the upper-bound of self-training, I compare the performance between detections with 0.5 confidence-threshold and 0.1 confidence-threshold. Then I will use detections (threshold=0.1) to teach self.
     [![Watch the video](https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/threshold.png)](https://www.dropbox.com/s/rt66oku7k9kwlyw/threshold.avi?dl=0)
     2. extract the all frames at 10 fps.
     ``` bash
@@ -222,7 +222,7 @@ python train.py --data ./data/custom/custom.data --cfg ./cfg/custom.cfg --resume
     ``` bash
     # useful tricks: when the yolov3 detect many positives with low-threshold, we can use the low threshold and a larger img-size.
     cd ..
-    python detect_video.py --cfg ./cfg/yolov3.cfg --weights ./weights/yolov3.pt --images ./video/images/ --output ./video/output/ --img-size 800 --conf-thres 0.2
+    python detect_video.py --cfg ./cfg/yolov3.cfg --weights ./weights/yolov3.pt --images ./video/images/ --output ./video/output/ --img-size 800 --conf-thres 0.1 --nms-thres=0.2
     # (optional, use tracking to filter hard negatives) If you extract the video at a high fps (>30), you can use template matching technique to filter some hard negatives (bbs that only were detected in frame-i but weren't detected in frame-[i-1] and frame-[i+1]). Deteails can be refered to Unsupervised Hard Example Mining from Videos for Improved Object Detection (ECCV'18).
     # (optional, use tracking to augument the hard positives) refer to Automatic adaptation of object detectors to new domains using self-training (CVPR 2019). 
     ```
@@ -255,7 +255,7 @@ python train.py --data ./data/custom/custom.data --cfg ./cfg/custom.cfg --resume
     rm val.shapes
     cd ..
     # fine-tuning
-    python train.py --data ./video/custom_video.data --cfg ./cfg/custom_video.cfg --resume --class_num=1 --transfer_id=2 --img-size=800
+    python train.py --data ./video/custom_video.data --cfg ./cfg/custom_video.cfg --resume --class_num=1 --transfer_id=1 --img-size=800
     ```
     6. Demo
     [![Watch the video](https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/demo_two.png)](https://www.dropbox.com/s/v9gckhyqi34l6c2/unsupervised_training.avi?dl=0)
