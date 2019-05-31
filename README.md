@@ -268,7 +268,7 @@ I plot the performance and loss. I find that the loss on class is getting conver
 | Fine-tuning        | Performance  |    Loss     |
 | ----------------------- |:-------------:|:-------------:|
 | Train new model from scratch | ![](https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/1_performance.png)  |  ![](https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/1_loss.png) |
-| Fine-tune model from coco (Detection) | ![](https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/2_performance.png)    |   ![](https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/2_loss.png) |
+| Fine-tune model from coco (Detection) | ![](https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/21_performance.png)    |   ![](https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/21_loss.png) |
 | Fine-tune model from coco (High+Detection)| ![](https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/3_performance.png)    |    ![](https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/3_loss.png) |
 | Fine-tune model from coco (Low+High+Detection)| ![](https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/4_performance.png)     |  ![](https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/4_loss.png) |
 
