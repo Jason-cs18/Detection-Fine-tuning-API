@@ -40,7 +40,7 @@ sample_img = glob.glob('%s/images/*' % current_directory)[0]
 
 height, width, channel = cv2.imread(sample_img).shape
 
-train_imgs = random.sample(valid_labels.keys(), int(0.9*len(valid_labels)))
+train_imgs = random.sample(valid_labels.keys(), int(1.0*len(valid_labels)))
 
 # generate labels
 for img, bbs in valid_labels.items():
@@ -58,8 +58,7 @@ train_file.close()
 
 train_file = open("%s/val.txt" % current_directory, "w") 
 
-for img in valid_labels.keys():
-	if img not in train_imgs:
-		train_file.write('%s/images/' % current_directory+img+".png\n") 
-train_file.close() 
+for img in train_imgs:
+	train_file.write('%s/images/' % current_directory+img+".png\n") 
+train_file.close()  
 
