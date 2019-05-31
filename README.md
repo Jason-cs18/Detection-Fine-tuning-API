@@ -204,7 +204,7 @@ python train.py --data ./data/custom/custom.data --cfg ./cfg/custom.cfg --resume
 python train.py --data ./data/custom/custom.data --cfg ./cfg/custom.cfg --resume --class_num=1 --transfer_id=2 --img-size=800
 ```
 2. Video without bounding boxes (Learning without supervision).
-    * To evaluate the upper-bound of self-training, I compare the performance between detections with 0.5 confidence-threshold and 0.2 confidence-threshold.
+    * To evaluate the upper-bound of self-training, I compare the performance between detections with 0.5 confidence-threshold and 0.2 confidence-threshold. Then I will use detections (threshold=0.2) to teach self.
     [![Watch the video](https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/threshold.png)](https://www.dropbox.com/s/rt66oku7k9kwlyw/threshold.avi?dl=0)
     2. extract the all frames at 10 fps.
     ``` bash
