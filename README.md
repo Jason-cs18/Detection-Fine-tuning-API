@@ -205,6 +205,7 @@ python train.py --data ./data/custom/custom.data --cfg ./cfg/custom.cfg --resume
 ```
 2. Video without bounding boxes (Learning without supervision).
     * To evaluate the upper-bound of self-training, I compare the performance between detections with 0.5 confidence-threshold and 0.2 confidence-threshold.
+    [![Watch the video](https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/threshold.png)](https://www.dropbox.com/s/rt66oku7k9kwlyw/threshold.avi?dl=0)
     2. extract the all frames at 10 fps.
     ``` bash
     cd ./yolov3/video
@@ -240,10 +241,11 @@ python train.py --data ./data/custom/custom.data --cfg ./cfg/custom.cfg --resume
     </p>
     
     4. use detections (from the 2nd step) those confidence-scores are large than threshold as the pseudo labels.
+    * Because we don't get true labels and our target is making model overfit on the current video, we use same data in training-set and validation-set.
     ``` bash
     cd video
     # generate pseudo-labels
-    python generate_bb.py # default: train/val = 9/1.
+    python generate_bb.py
     # update ./yolov3/cfg/custom_video.cfg as discussed in Data preparation.
     ```
     5. train the current model on the pseudo labels.
