@@ -12,7 +12,7 @@ Because detection-models (Yolo, Mask-RCNN, etc) are often developed by the diffe
 
 #### Documentations:
 1. [Supervised Fine-tuning](https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/Fine-Tune.docx)
-2. Unsupervised Fine-tuning:
+2. [Unsupervised Fine-tuning](https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/Fine-Tune.docx)
 
 #### Contents:
 1. [Installation](#Installation)
