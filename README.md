@@ -27,7 +27,7 @@ Because detection-models (Yolo, Mask-RCNN, etc) are often developed by the diffe
 8. [References](#References)
 
 #### Demo (Unsupervised fine-tuning on video, yolov3):
-[![Watch the video](https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/demo_two.png)](https://www.dropbox.com/s/v9gckhyqi34l6c2/unsupervised_training.avi?dl=0)
+[![Watch the video](https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/demo_three.png)](https://www.dropbox.com/s/v9gckhyqi34l6c2/unsupervised_training.avi?dl=0)
 
 ## Installation
 ##### Clone and install requirements
@@ -199,7 +199,7 @@ python train.py --data ./data/custom/custom.data --cfg ./cfg/custom.cfg --resume
     python train.py --data ./video/custom_video.data --cfg ./cfg/custom_video.cfg --resume --class_num=1 --transfer_id=1 --img-size=800
     ```
     6. Demo
-    [![Watch the video](https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/demo_two.png)](https://www.dropbox.com/s/v9gckhyqi34l6c2/unsupervised_training.avi?dl=0)
+    [![Watch the video](https://github.com/jacksonly/Detection-Fine-tuning-API/blob/master/images/demo_three.png)](https://www.dropbox.com/s/v9gckhyqi34l6c2/unsupervised_training.avi?dl=0)
     
 #### 4. Performance (Yolov3)
 In experiment, I train yolov3 on pedestrain detection (from [WildTrack](https://cvlab.epfl.ch/data/data-wildtrack/)). The preprocessed data can be download in [images](https://drive.google.com/open?id=1ZIiZjeZpwNG0UZGjWGbTT-8IMnJv7pJJ) and [labels](https://drive.google.com/open?id=1qyY2g90P7vrCUJ-MyaSsG2yUzJ3ZAe4T). You can extract these and put to ./yolov3/
